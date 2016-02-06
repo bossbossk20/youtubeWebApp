@@ -35,11 +35,9 @@ angular.module('todoApp', ['youtube-embed'])
         method: 'GET',
         url: '/search?keyword=' + keyword
       }).then(function successCallback (response) {
-        console.log(response)
         $scope.dataSearch = response.data
       }, function errorCallback (response) {
         console.log(response)
       })
     }
-
   })
