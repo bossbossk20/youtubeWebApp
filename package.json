@@ -1,0 +1,24 @@
+{
+  "name": "youtubePlaylist",
+  "version": "1.0.0",
+  "description": "youtubeWebApp",
+  "main": "app.js",
+  "dependencies": {
+    "angular-youtube-embed": "^1.1.1",
+    "jquery": "^2.2.0",
+    "express": "^4.13.4",
+    "nodemon": "^1.8.1",
+    "youtube-node": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/secure-plains-91147.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://secure-plains-91147.herokuapp.com/"
+}
