@@ -17,27 +17,6 @@
 </head>
 
 <body ng-controller="TodoListController" style="background-color: #F5F5F5 !important;">
-  <div class="container-fluid stateOne-me" ng-show="state == 1">
-  	<div class="row">
-  		<br><br><br><br><br><br><br>
-  		<center>
-  			<img src="./img/logo.png" style="width:350px;">
-  			<br><br><br><br><br><br>
-  			<div class="col-md-4"></div>
-	  		<div class="col-md-4">
-	  			<form ng-submit="search(keyword)">
-	  				<input placeholder="Search . . " type="text" ng-model="keyword" class="textboxSearch-me">
-		  			<div ng-click="search(keyword)" class="buttonSearch-me">
-		  				<span class="glyphicon glyphicon-search"></span>
-		  			</div>
-	  			</form>
-	  		</div>
-	  		<div class="col-md-4"></div>
-  		</center>
-  	</div>
-  	<div class="row"></div>
-  	<div class="row"></div>
-  </div>
   <div class="container-fluid" ng-show="state == 2">
   	<div class="row navbar-me">
   		<div class="col-md-4">

@@ -2,7 +2,7 @@
 angular.module('todoApp', ['youtube-embed'])
   .controller('TodoListController', function ($scope, $http) {
     $scope.dataSearch = null
-    $scope.state = 1
+    $scope.state = 2
     $scope.myVideo = []
     $scope.detailVideo = []
     $scope.playerVars = {
@@ -36,6 +36,7 @@ angular.module('todoApp', ['youtube-embed'])
         url: '/search?keyword=' + keyword
       }).then(function successCallback (response) {
         $scope.dataSearch = response.data
+        console.log(response.data);
       }, function errorCallback (response) {
         console.log(response)
       })
