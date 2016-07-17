@@ -1,6 +1,8 @@
 /* global angular */
 angular.module('todoApp', ['youtube-embed'])
   .controller('TodoListController', function ($scope, $http) {
+    var socket = io();
+    
     $scope.dataSearch = null
     $scope.state = 2
     $scope.myVideo = []
@@ -11,6 +13,7 @@ angular.module('todoApp', ['youtube-embed'])
     }
 
     $scope.addVideo = function (key, img, title) {
+      console.log(key,' : key ' ,img,' : img', title, ' title' );
       $scope.myVideo.push(key)
       $scope.detailVideo.push({
         'img': img,
